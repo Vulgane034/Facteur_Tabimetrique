@@ -1,0 +1,42 @@
+# ============================================================================
+# Facteur Tabimetrique API - Production Dependencies
+# ============================================================================
+# Author: EYAGA TABI Jean François Régis
+# Version: 1.0.0
+# ============================================================================
+
+# ============================================================================
+# Web Framework & Server
+# ============================================================================
+fastapi==0.104.1              # Modern async web framework
+uvicorn[standard]==0.24.0     # ASGI server with standard features
+python-multipart==0.0.6       # File upload and form data support
+
+# ============================================================================
+# Data Validation & Configuration
+# ============================================================================
+pydantic==2.5.0               # Data validation with Python type hints
+pydantic-settings==2.1.0      # Settings management with pydantic
+
+# ============================================================================
+# Scientific Computing & Data Processing
+# ============================================================================
+numpy>=1.21.0                 # Numerical computing library
+pandas>=1.3.0                 # Data manipulation and analysis
+scipy>=1.7.0                  # Scientific computing functions
+
+# ============================================================================
+# Machine Learning & Deep Learning
+# ============================================================================
+tensorflow==2.14.0            # ML framework (CPU version recommended)
+# Note: For GPU support, use: tensorflow[and-cuda]==2.14.0
+
+# ============================================================================
+# Advanced Correlation Measures
+# ============================================================================
+dcor==0.6                     # Distance correlation implementation
+
+# ============================================================================
+# Environment & Configuration
+# ============================================================================
+python-dotenv==1.0.0         # Load environment variables from .env file
